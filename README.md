@@ -11,14 +11,21 @@ Bu repository, Muğla Büyükşehir Belediyesi tarafından yayımlanacak deniz u
 - Feed contact: info@mugla.bel.tr
 - Agency contact: info@bodrumferibot.com
 - 2026 toplam tek yön sefer: 1.118
-- Validator sonucu: 0 error, 12 warning
-- Kalan uyarılar: yalnızca geçmiş 2026 servis dönemlerinden kaynaklanan `expired_calendar`
+- Feed sürümü: v0.5.1
+- Son doğrulama: 26.08.2026
+- Validator: MobilityData Canonical GTFS Schedule Validator 8.0.1
+- Sonuç: **0 error, 12 warning, 0 info**
+- Kalan 12 uyarı: yalnızca geçmiş 2026 servis dönemlerinden kaynaklanan `expired_calendar`
 
-GTFS dosyası: `bodrum-datca/gtfs.zip`
-
-Kalıcı raw feed adresi:
+### Canlı GTFS feed
 
 `https://raw.githubusercontent.com/cemtheman/gtfs/main/bodrum-datca/gtfs.zip`
+
+### Doğrulama raporu
+
+https://gtfs-validator-results.mobilitydata.org/f75afc61-70f6-445d-9cf0-74b917630a11/report.html
+
+Yayımlanan GitHub raw feed, MobilityData validator ile yeniden doğrulanmıştır. Böylece repository üzerinde yayımlanan `gtfs.zip` dosyasının doğrudan tüketilebilir olduğu teyit edilmiştir.
 
 ## Repository yapısı
 
@@ -31,13 +38,3 @@ gtfs/
     │   └── official_fares.csv
     └── docs/
         └── release-readiness.txt
-```
-
-İleride yeni hatlar aynı yapı altında ayrı klasörlerde eklenecektir.
-
-## Notlar
-
-- GTFS feed publisher: Muğla Büyükşehir Belediyesi.
-- Operator/agency: ilgili hattın işletmecisi.
-- Bodrum–Datça hattında yaklaşık 110 dakikalık tek yön süre operasyonel ortalamadır; kesin planlı varış süresi olarak değerlendirilmemelidir.
-- Araç/feribot ataması, bakım, arıza ve personel planlaması GTFS kapsamı dışındadır.
