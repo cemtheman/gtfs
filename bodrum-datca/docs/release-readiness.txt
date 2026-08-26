@@ -1,0 +1,92 @@
+BODRUM–DATÇA 2026 GTFS v0.5.1 — YAYIN ÖNCESİ KALİTE KONTROLÜ
+================================================================
+
+GENEL DURUM
+-----------
+Durum: YAYIN ADAYI / SAĞLAM BASELINE
+Validator sonucu: 0 error, 12 warning
+Kalan 12 warning: expired_calendar (geçmiş 2026 servis dönemleri)
+Bu uyarılar yıllık 2026 feed yaklaşımının doğal sonucudur; veri hatası değildir.
+
+PAKET
+-----
+Dosya: bodrum_datca_2026_gtfs_v0_5_1.zip
+SHA-256: c44575db46c86bb61ebbc813b1bbacd3ce41a419ec69d396ad16c1624108a10f
+
+GTFS DOSYALARI / KAYIT SAYILARI
+-------------------------------
+• agency.txt: 1 kayıt
+• calendar.txt: 26 kayıt
+• fare_leg_rules.txt: 8 kayıt
+• fare_products.txt: 8 kayıt
+• feed_info.txt: 1 kayıt
+• networks.txt: 1 kayıt
+• rider_categories.txt: 8 kayıt
+• route_networks.txt: 1 kayıt
+• routes.txt: 1 kayıt
+• shapes.txt: 18 kayıt
+• stop_times.txt: 108 kayıt
+• stops.txt: 2 kayıt
+• trips.txt: 54 kayıt
+
+KAYNAK VE GÜVEN DÜZEYİ
+----------------------
+1) RESMÎ KARARLARA DAYANAN VERİLER
+• 2026 temel sefer tarifesi: 2026/1-24 sayılı UKOME kararı
+• 15.07.2026–06.09.2026 ek seferleri: UTK2026/7-657
+• 2026 ücret tarifesi: 12.02.2026 tarih ve 39 sayılı Belediye Meclisi Kararı ve eki
+• Publisher: Muğla Büyükşehir Belediyesi
+• Feed contact: info@mugla.bel.tr
+• Operator/agency: Bodrum Feribot İşletmeciliği A.Ş.
+• Agency email: info@bodrumferibot.com
+
+2) SAHA / KULLANICI TARAFINDAN DOĞRULANAN VERİLER
+• Bisiklet kabulü
+• Tekerlekli sandalye ile terminal binişi
+• Seferlerin tekerlekli sandalye erişilebilirliği
+• Tek yön operasyonel ortalama seyahat süresi: yaklaşık 110 dakika
+
+3) KML / GEOMETRİ KAYNAKLI VERİLER
+• Bodrum Kaleiçi terminal noktası
+• Datça (Körmen) terminal noktası
+• Bodrum→Datça rota geometrisi
+• Datça→Bodrum rota geometrisi
+• Gidiş ve dönüş shape'leri ayrı tutulmuştur.
+
+4) BİLİNÇLİ VARSAYIM / GEÇİCİ MODEL
+• 110 dakika resmî planlı süre değildir.
+• stop_times.txt varış saatleri kalkış + 110 dakika olarak tahmini üretilmiştir.
+• Kalkışlar timepoint=1, varışlar timepoint=0 tutulur.
+• Deniz yolculuğunda kesin varış süresi izlenimi verilmemesi kararı korunmuştur.
+
+KAPSAM DIŞI
+-----------
+• Feribot/araç ataması
+• Personel vardiyası
+• Bakım / arıza / yedek araç yönetimi
+• Terminal içi pathways / boarding areas
+• Araç bazlı ücretlerin GTFS yolcu fare modeline zorla kodlanması
+• 1.565 TL gidiş/dönüş ürününün yanlış transfer semantiğiyle modellenmesi
+
+DOĞRULANMIŞ TEMEL SAYILAR
+-------------------------
+• Toplam 2026 tek yön sefer: 1.118
+• Bodrum→Datça: 559
+• Datça→Bodrum: 559
+• Trip şablonu: 54
+• Stop: 2
+• Shape: 2
+• Route: 1
+• Agency: 1
+
+YAYIN ÖNCESİ KALAN TEK OPERASYONEL İŞ
+--------------------------------------
+• GTFS ZIP dosyasının Muğla Büyükşehir Belediyesi tarafından kalıcı ve
+  herkese açık bir URL'de yayımlanması.
+• Yayın URL'si belirlendiğinde aynı paket URL üzerinden dağıtılabilir.
+• Tarife/ücret kararı değiştiğinde yeni feed_version ile güncellenmelidir.
+
+SONUÇ
+-----
+v0.5.1 teknik ve veri bütünlüğü açısından yayın adayıdır.
+110 dakikalık varışlar tahmini olarak bırakılmıştır ve bu durum bilinçlidir.

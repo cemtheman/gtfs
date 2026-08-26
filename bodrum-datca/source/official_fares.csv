@@ -1,0 +1,19 @@
+﻿category,official_fare_name,amount_or_discount,currency,gtfs_v0_4_treatment
+Yolcu,1 Kişi Tek Yön,875.00,TRY,GTFS Fares v2: modellendi
+Yolcu,1 Kişi Gidiş / Dönüş,1565.00,TRY,Kaynakta korundu; round-trip kuralı henüz GTFS'e kodlanmadı
+Araç,1 Otomobil Tek Yön,2950.00,TRY,GTFS yolcu fares katmanına eklenmedi
+Araç,1 Jeep / SUV Tek Yön,3565.00,TRY,GTFS yolcu fares katmanına eklenmedi
+Araç,1 Küçük Minibüs Tek Yön,4375.00,TRY,GTFS yolcu fares katmanına eklenmedi
+Araç,1 Büyük Minibüs Tek Yön,5815.00,TRY,GTFS yolcu fares katmanına eklenmedi
+Araç,1 Karavan Tek Yön,7815.00,TRY,GTFS yolcu fares katmanına eklenmedi
+Araç,1 Büyük Motosiklet (151-600 CC),1815.00,TRY,GTFS yolcu fares katmanına eklenmedi
+Araç,1 Küçük Motosiklet (0-150 CC),1450.00,TRY,GTFS yolcu fares katmanına eklenmedi
+Yolcu,Araç İçi Sürücü Harici Yolcu,400.00,TRY,Koşullu ürün; GTFS'e eklenmedi
+Bisiklet,Bisiklet (Yolcusuz),125.00,TRY,Kaynakta korundu; standart yolcu fare ürünü olarak eklenmedi
+İndirim,65 Yaş Üzeri Yolcu,0.00,TRY,"Ücretsiz; hak sahipliği koşullu, GTFS'e kodlanmadı"
+İndirim,0-6 Yaş Grubu,0.00,TRY,Ücretsiz; GTFS'e kodlanmadı
+İndirim,7-12 Yaş Grubu,50%,,GTFS'e kodlanmadı
+İndirim,25 yaş altı öğrenci kartı sahipleri,50%,,Kart/yaş koşullu; GTFS'e kodlanmadı
+İndirim,Cumhurbaşkanlığı Basın Kartı Sahipleri,20%,,Kart koşullu; GTFS'e kodlanmadı
+İndirim,%40 ve Üzeri Engelli - ücretsiz seyahat kartı,0.00,TRY,"Ücretsiz; kart koşullu, GTFS'e kodlanmadı"
+İndirim,Gazi ve Şehit Yakınları - ücretsiz seyahat kartı,0.00,TRY,"Ücretsiz; kart koşullu, GTFS'e kodlanmadı"
